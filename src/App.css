@@ -672,6 +672,42 @@ body {
   width: 100%;
   max-width: 1000px;
 }
+/* Styles for Resume Download Button */
+.download-resume-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--secondary-dark); /* Using secondary color for a different look than CTA */
+  color: var(--background-dark);
+  padding: 0.8rem 1.8rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline for links */
+  margin-top: 1.5rem; /* Space from the paragraph above */
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(var(--secondary-dark-rgb), 0.4);
+}
+
+.download-resume-button:hover {
+  background-color: var(--primary-dark); /* Transition to primary color on hover */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(var(--primary-dark-rgb), 0.6);
+}
+
+.light-mode .download-resume-button {
+  background-color: var(--secondary-light);
+  color: white;
+  box-shadow: 0 4px 10px rgba(var(--secondary-light-rgb), 0.2);
+}
+
+.light-mode .download-resume-button:hover {
+  background-color: var(--primary-light);
+  box-shadow: 0 6px 15px rgba(var(--primary-light-rgb), 0.4);
+}
+
 
 .about-grid .info-card.full-width {
   grid-column: 1 / -1;
