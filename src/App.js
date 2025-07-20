@@ -45,7 +45,7 @@ function App() {
   if (isLoading) {
     return (
       <div className="loading-screen">
-        <div className="loading-text">Loading Portfolio...</div>
+        <div className="loading-text">Loading Portfolio...Hello Techies!!</div>
       </div>
     );
   }
@@ -53,7 +53,7 @@ function App() {
   return (
     <div className={`app-container ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
       <header className="app-header">
-        <div className="app-logo">MyPortfolio</div>
+        <div className="app-logo">Soundarapandiyan</div>
         <nav className={`main-nav ${isMobileNavOpen ? 'open' : ''}`}>
           <button className={`nav-item ${activeSection === 'home' ? 'active' : ''}`} onClick={() => navigateToSection('home')}>Home</button>
           <button className={`nav-item ${activeSection === 'about' ? 'active' : ''}`} onClick={() => navigateToSection('about')}>About</button>
@@ -74,7 +74,7 @@ function App() {
         {/* Home Section */}
         <section id="home" className={`content-section home-section ${activeSection === 'home' ? 'active' : ''}`} key="home-section">
           <div className="hero-content">
-            <h1 className="hero-title">Hello, I'm Soundarapandiyan S.</h1>
+            <h1 className="hero-title">Hello, I'm Soundarapandiyan SDE.</h1>
             <p className="hero-subtitle">
               Security-driven engineer building intelligent Android applications that blend AI precision with user-centric privacy.
               Experienced in Kotlin, biometric authentication, offline-first architecture, and multi-layered security design.
@@ -324,7 +324,7 @@ function App() {
               <h3 className="card-title">Get in Touch</h3>
               <p className="contact-info-item"><FaEnvelope className="contact-icon" /> mspandiyan3337@gmail.com</p>
               <p className="contact-info-item"><FaPhone className="contact-icon" /> +91 6369912779</p>
-              <p className="contact-info-item"><FaMapMarkerAlt className="contact-icon" /> Tiruchirappalli, India</p>
+              <p className="contact-info-item"><FaMapMarkerAlt className="contact-icon" /> Chennai, India</p>
               <div className="social-links-contact">
                 <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="social-icon-contact"><FaLinkedin /> LinkedIn</a>
                 <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer" className="social-icon-contact"><FaGithub /> GitHub</a>
