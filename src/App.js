@@ -326,8 +326,8 @@ function App() {
               <p className="contact-info-item"><FaPhone className="contact-icon" /> +91 6369912779</p>
               <p className="contact-info-item"><FaMapMarkerAlt className="contact-icon" /> Chennai, India</p>
               <div className="social-links-contact">
-                <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="social-icon-contact"><FaLinkedin /> LinkedIn</a>
-                <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer" className="social-icon-contact"><FaGithub /> GitHub</a>
+                <a href="http://www.linkedin.com/in/soundara-pant" target="_blank" rel="noopener noreferrer" className="social-icon-contact"><FaLinkedin /> LinkedIn</a>
+                <a href="https://github.com/Mspanti" target="_blank" rel="noopener noreferrer" className="social-icon-contact"><FaGithub /> GitHub</a>
                 <a href="https://leetcode.com/u/Ft_pant/" target="_blank" rel="noopener noreferrer" className="social-icon-contact">
                   <FaCode /> LeetCode
                 </a>
