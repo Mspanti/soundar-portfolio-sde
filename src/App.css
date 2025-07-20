@@ -203,6 +203,8 @@ body {
 
 /* Dark Mode Toggle */
 .dark-mode-toggle {
+  /* Ensure it's always displayed on desktop */
+  display: block; /* Changed from 'none' in some media queries */
   background: none;
   border: none;
   font-size: 1.5rem;
@@ -233,7 +235,8 @@ body {
 
 /* Hamburger Menu (for mobile) */
 .hamburger-menu {
-  display: none; /* Hidden on desktop */
+  /* Ensure it's hidden on desktop and shown on mobile */
+  display: none; /* Default to hidden on desktop */
   flex-direction: column;
   justify-content: space-around;
   width: 30px;
@@ -897,6 +900,46 @@ body {
 .light-mode .tech-tag:hover {
   background-color: var(--secondary-light);
 }
+
+/* New styling for project links */
+.project-links {
+  margin-top: 1.5rem;
+  width: 100%; /* Take full width of the card */
+  text-align: center;
+}
+
+.github-link {
+  display: inline-flex; /* Use inline-flex to align icon and text */
+  align-items: center;
+  gap: 0.5rem; /* Space between icon and text */
+  background-color: var(--primary-dark); /* GitHub button color */
+  color: var(--background-dark);
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(var(--primary-dark-rgb), 0.4);
+}
+
+.github-link:hover {
+  background-color: var(--secondary-dark); /* Change color on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(var(--secondary-dark-rgb), 0.6);
+}
+
+.light-mode .github-link {
+  background-color: var(--primary-light);
+  color: white;
+  box-shadow: 0 4px 8px rgba(var(--primary-light-rgb), 0.2);
+}
+
+.light-mode .github-link:hover {
+  background-color: var(--secondary-light);
+  box-shadow: 0 6px 12px rgba(var(--secondary-light-rgb), 0.4);
+}
+
 
 .certifications-card {
   margin-top: 4rem;
