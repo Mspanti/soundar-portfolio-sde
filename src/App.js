@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import { FaMoon, FaSun, FaBars, FaTimes, FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaMoon, FaSun, FaBars, FaTimes, FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub, FaCode, FaDownload } from 'react-icons/fa';
 
-// Import your images from the src/assets folder
-// IMPORTANT: Ensure these filenames EXACTLY match your files in src/assets/
-import ProfileImage from './assets/Your-Image.png'; // Example: your-profile.png
+
+import ProfileImage from './assets/Your-Image.png';
 import WomenSafetyAppImage from './assets/Women-Safety-App-Image.png';
 import PasswordManagerImage from './assets/Password-Manager-Image.png';
 import MentalWellnessAppImage from './assets/Mental-Wellness-App-Image.png';
-
-
+import GrowthFlow from './assets/growthflow.png';
+import ResumePDF from './assets/Soundarapandiyan-RESUME-SDE_.pdf';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -84,7 +83,6 @@ function App() {
             <button className="cta-button" onClick={() => navigateToSection('projects')}>View My Work</button>
           </div>
           <div className="hero-image-container">
-            {/* Using the imported image variable */}
             <img src={ProfileImage} alt="Soundarapandiyan S" className="hero-image" />
           </div>
         </section>
@@ -100,6 +98,9 @@ function App() {
                 Experienced in Kotlin, biometric authentication, offline-first architecture, and multi-layered security design.
                 Skilled in deploying hybrid AI pipelines, encrypted storage, and real-time risk detection systems with measurable impact.
               </p>
+              <a href={ResumePDF} download="Soundarapandiyan_S_Resume.pdf" className="download-resume-button">
+                <FaDownload /> Download Resume
+              </a>
             </div>
 
             <div className="info-card">
@@ -188,7 +189,6 @@ function App() {
           <h2 className="section-heading">My Projects</h2>
           <div className="projects-grid">
             <div className="project-card info-card">
-              {/* Using the imported image variable */}
               <img src={WomenSafetyAppImage} alt="AI-Powered Women's Safety" className="project-image" />
               <h3 className="project-title">AI-Powered Women's Safety (Android Application)</h3>
               <p className="project-description">
@@ -203,10 +203,14 @@ function App() {
                 <span className="tech-tag secondary-tag">TensorFlow</span>
                 <span className="tech-tag primary-tag">OpenCV</span>
               </div>
+              <div className="project-links">
+                <a href="https://github.com/Mspanti/Girly1" target="_blank" rel="noopener noreferrer" className="github-link">
+                  <FaGithub /> View on GitHub
+                </a>
+              </div>
             </div>
 
             <div className="project-card info-card">
-              {/* Using the imported image variable */}
               <img src={PasswordManagerImage} alt="AegisPass – Secure Password Manager" className="project-image" />
               <h3 className="project-title">AegisPass – Secure Password Manager (Android Application)</h3>
               <p className="project-description">
@@ -220,10 +224,14 @@ function App() {
                 <span className="tech-tag secondary-tag">AndroidX Crypto</span>
                 <span className="tech-tag primary-tag">AI</span>
               </div>
+              <div className="project-links">
+                <a href="https://github.com/Mspanti/AegisPass" target="_blank" rel="noopener noreferrer" className="github-link">
+                  <FaGithub /> View on GitHub
+                </a>
+              </div>
             </div>
 
             <div className="project-card info-card">
-              {/* Using the imported image variable */}
               <img src={MentalWellnessAppImage} alt="Nous Guard – Offline AI Mental Wellness Companion" className="project-image" />
               <h3 className="project-title">Nous Guard – Offline AI Mental Wellness Companion (Android Application)</h3>
               <p className="project-description">
@@ -239,9 +247,15 @@ function App() {
                 <span className="tech-tag secondary-tag">Kotlin</span>
                 <span className="tech-tag primary-tag">Room DB</span>
               </div>
+              <div className="project-links">
+                <a href="https://github.com/Mspanti/NousGuard" target="_blank" rel="noopener noreferrer" className="github-link">
+                  <FaGithub /> View on GitHub
+                </a>
+              </div>
             </div>
 
             <div className="project-card info-card">
+              <img src={GrowthFlow} alt="Lightweight Internal Manager & Employee Feedback System" className="project-image" />
               <h3 className="project-title">Lightweight Internal Manager & Employee Feedback System</h3>
               <p className="project-description">
                   Built a beginner-friendly internal tool for managers to collect employee feedback and monitor performance. Designed scalable RESTful APIs with Django and PostgreSQL to manage employee records and feedback logs. Implemented a responsive and intuitive UI using React for better user experience across devices. Containerized the app using Docker for seamless deployment and testing across environments.
@@ -252,6 +266,11 @@ function App() {
                   <span className="tech-tag primary-tag">Python</span>
                   <span className="tech-tag secondary-tag">PostgreSQL</span>
                   <span className="tech-tag primary-tag">Docker</span>
+              </div>
+              <div className="project-links">
+                <a href="https://github.com/Mspanti/growthflow-frontend" target="_blank" rel="noopener noreferrer" className="github-link">
+                  <FaGithub /> View on GitHub
+                </a>
               </div>
             </div>
 
@@ -309,6 +328,12 @@ function App() {
               <div className="social-links-contact">
                 <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="social-icon-contact"><FaLinkedin /> LinkedIn</a>
                 <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer" className="social-icon-contact"><FaGithub /> GitHub</a>
+                <a href="https://leetcode.com/u/Ft_pant/" target="_blank" rel="noopener noreferrer" className="social-icon-contact">
+                  <FaCode /> LeetCode
+                </a>
+                <a href="https://www.hackerrank.com/mspandiyan3337" target="_blank" rel="noopener noreferrer" className="social-icon-contact">
+                  <FaCode /> HackerRank
+                </a>
               </div>
             </div>
             <div className="info-card contact-form-card">
